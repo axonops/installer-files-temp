@@ -7,7 +7,7 @@ Follow the instructions below to setup a test environment for self-hosted AxonOp
 * Linux RedHat / CentOS compatible OS
 * 4 CPU Cores
 * 16GB memory
-* 
+* 30GB storage for elasticsearch
 
 ## Download and Unpack
 Steps to install AxonOps
