@@ -28,7 +28,7 @@ Steps to install AxonOps
 ### Install and start axon-dash
 1. Install Docker - `sudo yum install docker`
 2. Import axon-dash docker image `docker load -i axon-dash-1.0.76.docker`
-3. Start axon-dash `docker run -d --network host europe-docker.pkg.dev/axonops-public/axonops-docker/axon-dash`
+3. Start axon-dash `docker run -d --network host europe-docker.pkg.dev/axonops-public/axonops-docker/axon-dash:1.0.76`
 
 ## Install Cassandra agent
 1. Copy `axon-agent-1.0.61-1.x86_64.rpm` and `axon-cassandra<cassandra_version>-agent-1.0.6-1.noarch.rpm` to your Cassandra nodes
