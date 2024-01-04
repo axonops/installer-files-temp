@@ -44,16 +44,17 @@ axon-agent:
 ```
 4. Set file permissions on `/etc/axonops/axon-agent.yml` file by executing the following command
 ```sudo chmod 0644 /etc/axonops/axon-agent.yml```
-5. Edit `cassandra-env.sh`, usually located in your Cassandra install path such as `/<Cassandra Installation Directory>/conf/cassandra-env.sh`, and append the following line at the end of the file:
+5. Copy the file named `axon-dse5.1-agent.jar` from this repository to DSE server in `/usr/share/axonops/` directory.
+6. Edit `cassandra-env.sh`, usually located in your Cassandra install path such as `/<Cassandra Installation Directory>/conf/cassandra-env.sh`, and append the following line at the end of the file:
 ```
-JVM_OPTS="$JVM_OPTS -javaagent:/usr/share/axonops/axon-cassandra3.11-agent.jar=/etc/axonops/axon-agent.yml"
+JVM_OPTS="$JVM_OPTS -javaagent:/usr/share/axonops/axon-dse5.1-agent.jar=/etc/axonops/axon-agent.yml"
 ```
 6. Add AxonOps user to Cassandra user group and Cassandra user to AxonOps group
 ```
 sudo usermod -aG <your_cassandra_group> axonops
 sudo usermod -aG axonops <your_cassandra_user>
 ```
-7. (Re)start Cassandra
+7. (Re)start Cassandra / DSE
 8. Start axon-agent - `sudo systemctl start axon-agent`
 
 ## Accessing AxonOps UI
