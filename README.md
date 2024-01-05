@@ -36,7 +36,8 @@ Steps to install AxonOps
 3. Configure axon-agent - edit `sudo vi /etc/axonops/axon-agent.yml` and replace with the following
 ```
 axon-server:
-    hosts: "<ip_address_of_axon_server>:1888"
+    hosts: "<ip_address_of_axon_server>"
+    port: 1888
 axon-agent:
     org: <your_org_name>
     tls:
