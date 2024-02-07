@@ -5,6 +5,7 @@ cql_hosts:
 cql_username: "<username>"
 cql_password: "<password>"
 cql_local_dc: "<cassandra_dc_local>"
+cql_keyspace: "axonops"
 cql_proto_version: 4
 cql_max_searchqueriesparallelism: 100
 cql_batch_size: 100
