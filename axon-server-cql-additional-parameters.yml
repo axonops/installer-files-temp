@@ -1,0 +1,21 @@
+
+cql_hosts:
+ - <ip_address_or_hostname>
+ - <ip_address_or_hostname>
+cql_username: "<username>"
+cql_password: "<password>"
+cql_local_dc: "<cassandra_dc_local>"
+cql_proto_version: 4
+cql_max_searchqueriesparallelism: 100
+cql_batch_size: 100
+cql_page_size: 100
+cql_cache_metrics: true
+cql_autocreate_tables: false
+cql_retrypolicy_numretries: 3
+cql_retrypolicy_min: 1s
+cql_retrypolicy_max: 10s
+cql_reconnectionpolicy_maxretries: 10
+cql_reconnectionpolicy_initialinterval: 1s
+cql_reconnectionpolicy_maxinterval: 10s
+cql_metrics_cache_max_size_mb: 4096  #MB
+cql_metrics_cache_max_items : 20000000
