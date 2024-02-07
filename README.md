@@ -11,7 +11,7 @@ Follow the instructions below to setup a test environment for self-hosted AxonOp
 
 ## Download and Unpack
 Steps to install AxonOps
-1. Download axon-agent-1.0.64-1.x86_64.rpm, axon-server-1.0.131-1.x86_64.rpm, axon-dash.tar in this project click on the file in the github UI, then click on `Download raw file` button.
+1. Download `axon-agent-1.0.64-1.x86_64.rpm`, `axon-server-1.0.131-1.x86_64.rpm`, `axon-dash.tar` in this project click on the file in the github UI, then click on `Download raw file` button.
 
 
 ## Install AxonOps service
