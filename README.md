@@ -54,14 +54,19 @@ axon-agent:
 6. Edit `cassandra-env.sh`, usually located in your Cassandra install path such as `/<Cassandra Installation Directory>/conf/cassandra-env.sh`, and append the following line at the end of the file:
 ```
 JVM_OPTS="$JVM_OPTS -javaagent:/usr/share/axonops/axon-dse5.1-agent.jar=/etc/axonops/axon-agent.yml"
+JVM_OPTS="$JVM_OPTS -Djna.tmpdir=/home/cassandraappidprd/tmp -Djava.io.tmpdir=/home/cassandraappidprd/tmp -Dio.netty.native.workdir=/home/cassandraappidprd/tmp"
 ```
-6. Add AxonOps user to Cassandra user group and Cassandra user to AxonOps group
-```
-sudo usermod -aG <your_cassandra_group> axonops
-sudo usermod -aG axonops <your_cassandra_user>
-```
-7. (Re)start Cassandra / DSE
-8. Start axon-agent - `sudo systemctl start axon-agent`
+7. Add AxonOps user to Cassandra user group and Cassandra user to AxonOps group
+   1. Add `cassandraappid<env>` user to `axonops` group in `/etc/group`
+    ```
+    axonops:x:<gid>:axonops,cassandraappid<env>
+    ```
+   2. Add `axonops` user to `ux_cassandrauatadm` group in `etc/group`
+    ```
+    ux_cassandrauatadm:x:<gid>:cassandraappid<env>,axonops
+    ```
+8. (Re)start Cassandra / DSE
+9. Start axon-agent - `sudo systemctl start axon-agent`
 
 ## Accessing AxonOps UI
 Using your browser go to `http://<ip_address_of_axonops_server>:3000`
