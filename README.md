@@ -63,7 +63,7 @@ JVM_OPTS="$JVM_OPTS -Djna.tmpdir=/home/cassandraappidprd/tmp -Djava.io.tmpdir=/h
     ```
    2. Add `axonops` user to `ux_cassandrauatadm` group in `etc/group`
     ```
-    ux_cassandrauatadm:x:<gid>:cassandraappid<env>,axonops
+    ux_cassandra<env>adm:x:<gid>:cassandraappid<env>,axonops
     ```
 8. (Re)start Cassandra / DSE
 9. Start axon-agent - `sudo systemctl start axon-agent`
