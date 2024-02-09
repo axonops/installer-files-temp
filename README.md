@@ -54,7 +54,7 @@ axon-agent:
 6. Edit `cassandra-env.sh`, usually located in your Cassandra install path such as `/<Cassandra Installation Directory>/conf/cassandra-env.sh`, and append the following line at the end of the file:
 ```
 JVM_OPTS="$JVM_OPTS -javaagent:/usr/share/axonops/axon-dse5.1-agent.jar=/etc/axonops/axon-agent.yml"
-JVM_OPTS="$JVM_OPTS -Djna.tmpdir=/home/cassandraappidprd/tmp -Djava.io.tmpdir=/home/cassandraappidprd/tmp -Dio.netty.native.workdir=/home/cassandraappidprd/tmp"
+JVM_OPTS="$JVM_OPTS -Djna.tmpdir=/home/cassandraappid<env>/tmp -Djava.io.tmpdir=/home/cassandraappid<env>/tmp -Dio.netty.native.workdir=/home/cassandraappid<env>/tmp"
 ```
 7. Add AxonOps user to Cassandra user group and Cassandra user to AxonOps group
    1. Add `cassandraappid<env>` user to `axonops` group in `/etc/group`
