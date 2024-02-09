@@ -61,7 +61,7 @@ JVM_OPTS="$JVM_OPTS -Djna.tmpdir=/home/cassandraappid<env>/tmp -Djava.io.tmpdir=
     ```
     axonops:x:<gid>:axonops,cassandraappid<env>
     ```
-   2. Add `axonops` user to `ux_cassandrauatadm` group in `etc/group`
+   2. Add `axonops` user to `ux_cassandra<env>adm` group in `etc/group`
     ```
     ux_cassandra<env>adm:x:<gid>:cassandraappid<env>,axonops
     ```
