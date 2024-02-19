@@ -47,6 +47,15 @@ axon-agent:
     org: <your_org_name>
     tls:
       mode: "disabled" # disabled, TLS, mTLS
+dse:
+    tier0: # metrics collected every 5 seconds
+        metrics:
+            jvm_:
+              - "java.lang:*"
+            cas_:
+              - "org.apache.cassandra.metrics:*"
+              - "org.apache.cassandra.net:type=FailureDetector"
+              - "com.datastax.bdp:type=metrics,*"
 ```
 4. Set file permissions on `/etc/axonops/axon-agent.yml` file by executing the following command
 ```sudo chmod 0644 /etc/axonops/axon-agent.yml```
