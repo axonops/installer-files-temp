@@ -20,3 +20,5 @@ cql_reconnectionpolicy_initialinterval: 1s
 cql_reconnectionpolicy_maxinterval: 10s
 cql_metrics_cache_max_size_mb: 4096  #MB
 cql_metrics_cache_max_items : 20000000
+cql_read_consistency: "LOCAL_QUORUM"
+cql_write_consistency: "LOCAL_QUORUM"
