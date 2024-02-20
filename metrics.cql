@@ -13,7 +13,7 @@ CREATE TABLE axonops.metrics5 (
     AND cdc = false
     AND comment = '7 days retention for 5 seconds resolution metrics'
     AND compaction = {'class': 'org.apache.cassandra.db.compaction.TimeWindowCompactionStrategy', 'compaction_window_size': '1', 'compaction_window_unit': 'DAYS', 'max_threshold': '32', 'min_threshold': '4', 'unsafe_aggressive_sstable_expiration': 'true'}
-    AND compression = {'chunk_length_in_kb': '16', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND compression = {'chunk_length_in_kb': '8', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
     AND crc_check_chance = 1.0
     AND default_time_to_live = 604800
     AND extensions = {}
@@ -37,7 +37,7 @@ CREATE TABLE axonops.metrics60 (
     AND cdc = false
     AND comment = '30 days retention for 60 seconds resolution metrics'
     AND compaction = {'class': 'org.apache.cassandra.db.compaction.TimeWindowCompactionStrategy', 'compaction_window_size': '3', 'compaction_window_unit': 'DAYS', 'max_threshold': '32', 'min_threshold': '4', 'unsafe_aggressive_sstable_expiration': 'true'}
-    AND compression = {'chunk_length_in_kb': '16', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND compression = {'chunk_length_in_kb': '8', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
     AND crc_check_chance = 1.0
     AND default_time_to_live = 2592000
     AND extensions = {}
@@ -61,7 +61,7 @@ CREATE TABLE axonops.metrics720 (
     AND cdc = false
     AND comment = '60 days retention for 720 seconds resolution metrics'
     AND compaction = {'class': 'org.apache.cassandra.db.compaction.TimeWindowCompactionStrategy', 'compaction_window_size': '6', 'compaction_window_unit': 'DAYS', 'max_threshold': '32', 'min_threshold': '4', 'unsafe_aggressive_sstable_expiration': 'true'}
-    AND compression = {'chunk_length_in_kb': '16', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND compression = {'chunk_length_in_kb': '8', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
     AND crc_check_chance = 1.0
     AND default_time_to_live = 5184000
     AND extensions = {}
@@ -85,7 +85,7 @@ CREATE TABLE axonops.metrics7200 (
     AND cdc = false
     AND comment = '180 days retention for 7200 seconds resolution metrics'
     AND compaction = {'class': 'org.apache.cassandra.db.compaction.TimeWindowCompactionStrategy', 'compaction_window_size': '30', 'compaction_window_unit': 'DAYS', 'max_threshold': '32', 'min_threshold': '4', 'unsafe_aggressive_sstable_expiration': 'true'}
-    AND compression = {'chunk_length_in_kb': '16', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND compression = {'chunk_length_in_kb': '8', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
     AND crc_check_chance = 1.0
     AND default_time_to_live = 15552000
     AND extensions = {}
@@ -109,7 +109,7 @@ CREATE TABLE axonops.metrics86400 (
     AND cdc = false
     AND comment = '365 days retention for 86400seconds resolution metrics'
     AND compaction = {'class': 'org.apache.cassandra.db.compaction.TimeWindowCompactionStrategy', 'compaction_window_size': '60', 'compaction_window_unit': 'DAYS', 'max_threshold': '32', 'min_threshold': '4', 'unsafe_aggressive_sstable_expiration': 'true'}
-    AND compression = {'chunk_length_in_kb': '16', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND compression = {'chunk_length_in_kb': '8', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
     AND crc_check_chance = 1.0
     AND default_time_to_live = 31536000
     AND extensions = {}
