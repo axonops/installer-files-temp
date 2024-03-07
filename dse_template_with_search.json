@@ -4835,7 +4835,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "dc,rack,host_id"
+                    "values": "cluster,dc,rack,host_id"
                 },
                 {
                     "name": "percentile",
