@@ -32,7 +32,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "dc,rack,host_id,keyspace"
+                    "values": "cluster,dc,rack,host_id,keyspace"
                 },
                 {
                     "name": "percentile",
@@ -3289,7 +3289,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "dc,rack,host_id"
+                    "values": "cluster,dc,rack,host_id"
                 }
             ],
             "panels": [
@@ -4351,7 +4351,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "dc,rack,host_id,keyspace"
+                    "values": "cluster,dc,rack,host_id,keyspace"
                 },
                 {
                     "name": "keyspace",
@@ -7381,7 +7381,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "dc,rack,host_id,keyspace"
+                    "values": "cluster,dc,rack,host_id,keyspace"
                 }
             ],
             "panels": [
@@ -8528,7 +8528,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "dc,rack,host_id,keyspace"
+                    "values": "cluster,dc,rack,host_id,keyspace"
                 }
             ],
             "panels": [
@@ -9310,7 +9310,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "dc,rack,host_id,keyspace"
+                    "values": "cluster,dc,rack,host_id,keyspace"
                 }
             ],
             "panels": [
@@ -13138,7 +13138,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "scope,dc,rack,host_id"
+                    "values": "cluster,scope,dc,rack,host_id"
                 }
             ],
             "panels": [
@@ -13672,7 +13672,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "dc,rack,host_id"
+                    "values": "cluster,dc,rack,host_id"
                 }
             ],
             "panels": [
@@ -17119,7 +17119,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "scope,dc,rack,host_id"
+                    "values": "cluster,scope,dc,rack,host_id"
                 }
             ],
             "panels": [
@@ -17547,7 +17547,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "dc,rack,host_id"
+                    "values": "cluster,dc,rack,host_id"
                 }
             ],
             "panels": [
@@ -18528,7 +18528,7 @@
                     "name": "groupBy",
                     "type": "custom",
                     "multi": false,
-                    "values": "dc,rack,host_id"
+                    "values": "cluster,dc,rack,host_id"
                 },
                 {
                     "name": "mountpoint",
