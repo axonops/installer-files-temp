@@ -47,6 +47,7 @@ axon-agent:
     org: <your_org_name>
     tls:
       mode: "disabled" # disabled, TLS, mTLS
+    java_agent_listen_address: 127.0.0.1:17004
 dse:
     tier0: # metrics collected every 5 seconds
         metrics:
