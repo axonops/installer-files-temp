@@ -11,7 +11,7 @@ Follow the instructions below to setup a test environment for self-hosted AxonOp
 
 ## Download and Unpack
 Steps to install AxonOps
-1. Download `axon-agent-1.0.64-1.x86_64.rpm`, `axon-server-1.0.131-1.x86_64.rpm`, `axon-dash.tar` in this project click on the file in the github UI, then click on `Download raw file` button.
+1. Download `axon-agent-1.0.71-1.x86_64.rpm`, `axon-server-1.0.131-1.x86_64.rpm`, `axon-dash.tar` in this project click on the file in the github UI, then click on `Download raw file` button.
 
 
 ## Install AxonOps service
@@ -36,8 +36,8 @@ Steps to install AxonOps
 3. Start axon-dash `docker run -d --network host europe-docker.pkg.dev/axonops-public/axonops-docker/axon-dash:1.0.79`
 
 ## Install Cassandra agent
-1. Copy `axon-agent-1.0.64-1.x86_64.rpm` and `axon-cassandra<cassandra_version>-agent-1.0.6-1.noarch.rpm` to your Cassandra nodes
-2. Install 2 packages using the commands `sudo rpm -Uvh axon-agent-1.0.64-1.x86_64.rpm`
+1. Copy `axon-agent-1.0.71-1.x86_64.rpm` and `axon-cassandra<cassandra_version>-agent-1.0.6-1.noarch.rpm` to your Cassandra nodes
+2. Install 2 packages using the commands `sudo rpm -Uvh axon-agent-1.0.71-1.x86_64.rpm`
 3. Configure axon-agent - edit `sudo vi /etc/axonops/axon-agent.yml` and replace with the following
 ```
 axon-server:
